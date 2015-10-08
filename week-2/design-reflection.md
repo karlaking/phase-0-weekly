@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<H1></H1>
+<H1>My Site Map</H1>
 <img src="imgs/site-map.pdf">
 </body>
 
