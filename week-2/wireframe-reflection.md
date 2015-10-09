@@ -4,7 +4,7 @@
 	<head>
 	</head>
 	<body>
-		<h2>Reflections on Wireframing<h2>
+		<h2>Reflections on Wireframing</h2>
 		<p>A wireframe is a critical part of the web design process. It is the stage that addresses the design and function of the web site. It is a vague rendering of what content and features will be present on the page.<p/>
 		<p>Wireframing eleminates confusion during the web development process by organizing the project, and essentially making a to-do list of what features need to be researched or what content should be developed.</p>
 		<p>Wireframing was really helpful in visualizing what code is needed to support a website. I enjoyed the experience and learned how ux design is part of our concern, too.</p>
