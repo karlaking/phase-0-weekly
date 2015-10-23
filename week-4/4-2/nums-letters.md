@@ -13,7 +13,7 @@ Calculate and print hours in a year and minutes in a decade
 ```ruby
 puts 24*365
 puts (24*60)*(365*10)
-'''
+```
 
 ###To view the code for 4.2.1, 4.2.2, and 4.2.3, look at the links in my 4.2 folder in GitHub.
 
