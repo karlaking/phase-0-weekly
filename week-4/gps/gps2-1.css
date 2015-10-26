@@ -1,0 +1,28 @@
+h1 {
+    background: aliceblue;
+    text-align: center;
+}
+
+
+
+footer {
+	background: aliceblue;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+}
+
+
+section.column-1 {
+	background: chocolate;
+    width: 45%;
+    float: left;
+    /* float: right; */
+}
+section.column-2 {
+    background: chocolate;
+    width: 45%;
+    float: left;
+}
