@@ -27,14 +27,10 @@ class Die
   end
 
   def sides
-  	#define a method to intialize @sides (?)
     @sides
   end
 
   def roll
-  	#generate a random number object instance (construct?)
-  	your_num = Random.new
-  	#populate the random number using 1 as a min and arg sides as max (intialize??)
   	your_num.rand(1..@sides) 
   end
 end
