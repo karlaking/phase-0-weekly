@@ -2,13 +2,7 @@
 # Hole 1
 # Target element: "FORE"
 
-array = 
-  [[1,2], 
-  ["inner", ["eagle", "par", 
-    ["FORE", "hook"]
-    ]
-    ]
-  ]
+array = [[1,2],["inner", ["eagle", "par", ["FORE", "hook"]]]]
 
 # attempts:
 # ============================================================
