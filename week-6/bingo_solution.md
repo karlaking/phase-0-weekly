@@ -2,15 +2,17 @@
 
 ### I spent 5 hours on this challenge.
 
+ruby file at:
+https://github.com/karlaking/phase-0-weekly/blob/master/week-6/bingo_solution.rb
 
-### Release 0: Pseudocode
+### Pseudocode
  1. intialize the instance variable
  2. Create the method BingoBoard#call
 	It will need to generate a letter ( "B", "I", "N", "G", "O") and a number from 1 to 100
  3. Create the method BingoBoard#check
 	 to check whether that column has that number in the existing bingo_board If the number is in the column, replace it with an "x" Display the updated Bingo Board for the user in a readable way 
 
-#### Outline:
+#### Outline
 
  Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
    Generate a random letter
@@ -93,7 +95,7 @@ class BingoBoard
   end  
 end
 ```
-###DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
+###DRIVER CODE 
 ```ruby
 board = [[47, 44, 71, 8, 88],
         [22, 69, 75, 65, 73],
@@ -106,7 +108,7 @@ new_game.call
 new_game.check 
 ```
 
-###Known issues with my code: 
+###Known issues with my code 
 I cannot access the instance variable @bingo_board outside of methods
 (For example, I am not able to print the updated board on line 95)
 I had to set a new variable on line 92 to update the bingo_board, otherwise
