@@ -54,9 +54,12 @@ p number_array
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 
 #Reflection
-#What are some general rules you can apply to nested arrays?
+# What are some general rules you can apply to nested arrays?
+# Your ability to access individual elements within nested arrays remains somewhat constant. Using the same syntax we learned originally, we simply have to use brackets to select elements within elements as seen in the first exercise.
 
 #What are some ways you can iterate over nested arrays?
+# Using is_a? Array with map is a good way to check all the elements within a nested array, whether they're in an array themselves, or solo. Another method is to flatten the array, that is if you do not need the original nested in place.
 
 #Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+#No, though I wish there were/hope they exist for iterating over nested hashes. It is a real pain in the neck!
   
