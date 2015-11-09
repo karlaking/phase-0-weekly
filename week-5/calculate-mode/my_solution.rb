@@ -62,7 +62,7 @@ mode([4, 4, 5, 5, 6, 6, 6, 7, 5]) # => [5,6]
 # 3. Refactored Solution
 def mode(array)
   frequencies = Hash[array.map {|x| [x, 0]}]
-  
+  p frequencies
   array.each do |element|
     frequencies[element] += 1
   end
@@ -77,11 +77,11 @@ def mode(array)
 end
 
 puts mode([1,2,3,3])         # => [3]
-puts mode([4.5, 0, 0])       # => [0]
-puts mode([1.5, -1, 1, 1.5]) # => [1.5]
-puts mode([1,1,2,2])         # => [1,2]
-puts mode([1,2,3])           # => [1,2,3], because all occur with equal frequency
-puts mode(["who", "what", "where", "who"]) # => [who]
+#puts mode([4.5, 0, 0])       # => [0]
+#puts mode([1.5, -1, 1, 1.5]) # => [1.5]
+#puts mode([1,1,2,2])         # => [1,2]
+#puts mode([1,2,3])           # => [1,2,3], because all occur with equal frequency
+#puts mode(["who", "what", "where", "who"]) # => [who]
 
 
 

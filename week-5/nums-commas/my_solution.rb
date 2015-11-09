@@ -23,6 +23,7 @@
 
 # 1. Initial Solution
 # A method that takes a positive integer as its input and returns a comma-separated integer as a string
+=begin
 def separate_comma(integer)
 	string = integer.to_s
 	split = string.split(//)
@@ -50,7 +51,7 @@ separate_comma(1000000) # => "1,000,000"
 separate_comma(0)       # => "0"
 separate_comma(100)     # => "100"
 
-
+=end
 # 2. Refactored Solution
 def separate_comma(integer)
 	#Split the integer and reverse it
@@ -69,10 +70,10 @@ def separate_comma(integer)
 	p string_with_commas
 end
 
-separate_comma(1000)
+#separate_comma(1000)
 separate_comma(1000000) # => "1,000,000"
-separate_comma(0)       # => "0"
-separate_comma(100)     # => "100"
+#separate_comma(0)       # => "0"
+#separate_comma(100)     # => "100"
 
 # 3. Reflection
 =begin

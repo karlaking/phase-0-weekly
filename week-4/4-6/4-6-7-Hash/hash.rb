@@ -6,7 +6,7 @@
 # Your Solution Below
 
 # my_info is empty to start.  Edit this!
-my_info = { "first_name" => "Karla",
+my_info = {"first_name" => "Karla",
   "last_name" => "King",
   "hometown" => "Silver Spring,MD",
   "age" => "29"
