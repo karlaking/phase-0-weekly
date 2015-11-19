@@ -36,14 +36,16 @@ var letterGridValues = []
 	};
 console.log(letterGridValues)
 
-var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink	Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink']
+var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink	Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink'];
 
-  function color()
-	var coloringBoard = {};
-	coloringBoard.letterGridValues ='blank';
- 	console.log(coloringBoard);	
+console.log(letterGridValues[20]);
 
- color();
+  // // function color()
+	 // var coloringBoard = {};
+	 // coloringBoard.letterGridValues ='blank';
+  // 	console.log(coloringBoard);	
+
+ // color();
 
 
 
