@@ -23,11 +23,11 @@ addWin(athletes);
 console.log(athletes);
 athletes[1].win();
 
-function practice(array){
-	for (var i = 0; i < array.length ; i++) {
+// function practice(array){
+// 	for (var i = 0; i < array.length ; i++) {
 
-	} 
-}
+// 	} 
+// }
 //Release 2 
 
 function reverseString(string){

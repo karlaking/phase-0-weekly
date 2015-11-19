@@ -14,6 +14,10 @@ console.log(number);
 prompt ("What's your favorite number?");
 alert("Hey, that's my favorite number, too!");
 
+
+
+
+// Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
 for (var string = '#'; string.length <= 7; string = string + '#')
   console.log(string);
 
@@ -28,15 +32,26 @@ for (var string = '#'; string.length <= 7; string = string + '#')
 */
 
 
-// Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
-
-
-
 // Functions
 
 // Complete the `minimum` exercise.
+// Your code here.
 
+function min(a,b){
+console.log(Math.min(a,b));
+}
+
+min(14,8);
 
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+var karla = {
+  name: 'Karla King',
+  age: 29,
+  favoriteFood: ['pizza','carrots','oysters'],
+  quik: 'busted right shouder'
+}
+
+
+
