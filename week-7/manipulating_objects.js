@@ -15,32 +15,37 @@ var terah = {
 }
 // __________________________________________
 // Write your code below.
-
-terah.spouse = "Adam";
 var adam = { 
   name: "Adam"
 
+};
+
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+adam.spouse = terah;
+terah.children = {};
+carson = {
+  name: "Carson"
 }
-
-
-
-
-
-
-
-
+terah.children.carson = carson;
+carter = {
+  name: "Carter"}
+terah.children.carter = carter;
+colton = {
+  name: "Colton"}
+terah.children.colton = colton;
+adam.children = terah.children;
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
 // What tests did you have trouble passing? What did you do to make it pass? Why did that work?
-// The final test was a bit challenging. My pair and I 
+// I was caught on something silly early on with trying to add Adam as a spouse, it did not occur to me to simple add the object as a variable. 
 // How difficult was it to add and delete properties outside of the object itself?
-// What did you learn about manipulating objects in this challenge
-// 
-//
-//
-//
-//
+// I stumbled upon this answer rather quickly, using dot notation made sense to access the property for deletion. 
+// What did you learn about manipulating objects in this challenge?
+// I learned that objects are powerful in how they can store data, so it is important I understand how to access values in complex object types.
+
 
 
 // __________________________________________
