@@ -35,33 +35,41 @@
 // 	Define a function color to update the coloring board hash to include values to include a randomly selected color from the crayon box array.
 
 // Initial Code
+```javascript
+var array1 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
+console.log(array1);
 
-var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
-console.log(letters);
-
-var numbers = []
+var array2 = []
 for (var i = 1; i <= 14; i++) {
-   numbers.push(i);
+   array2.push(i);
 };
-console.log(numbers);
+console.log(array2);
 
 
-var letterGridValues = [] 
-	for (var i = 0;i<letters.length;i++){
-		letterGridValues.push(letters[0]+numbers[i]);	
-	};
-	for (var i = 0;i<letters.length;i++){
-		letterGridValues.push(letters[1]+numbers[i]);	
-	};
-console.log(letterGridValues)
+var grid = [];
+array1.forEach(function(a1){
+  array2.forEach(function(a2){
+    grid.push(a1 + a2);
+  });
+});
 
-var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink	Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink']
+console.log(grid);
 
-  function color()
-	var coloringBoard = {};
-	coloringBoard.letterGridValues ='blank';
- 	console.log(coloringBoard);	
+var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink', 'Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink'];
 
- color();
+var oneColor = crayonBox[Math.floor(Math.random() * crayonBox.length)];
+console.log(oneColor);
+
+
+// function color(){
+// 	var colorGrid = {};
+// 	grid.forEach(function(a1){
+// 	colorGrid.push(a1);
+// });
+// };
+// color();
+```
+
+I am still having issues with the color function. I just need to figure out how to randomly assign "oneColor" to each element in "grid".
 
 
