@@ -17,38 +17,38 @@
 
 // Initial Code
 
-var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
-console.log(letters);
+var array1 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
+console.log(array1);
 
-var numbers = []
+var array2 = []
 for (var i = 1; i <= 14; i++) {
-   numbers.push(i);
+   array2.push(i);
 };
-console.log(numbers);
+console.log(array2);
 
 
-var letterGridValues = [] 
-	for (var i = 0;i<letters.length;i++){
-		letterGridValues.push(letters[0]+numbers[i]);	
-	};
-	for (var i = 0;i<letters.length;i++){
-		letterGridValues.push(letters[1]+numbers[i]);	
-	};
-console.log(letterGridValues)
+var combos = [];
+array1.forEach(function(a1){
+  array2.forEach(function(a2){
+    combos.push(a1 + a2);
+  });
+});
 
-var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink	Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink'];
+console.log(combos);
 
-console.log(letterGridValues[20]);
+var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink', 'Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink'];
 
-  // // function color()
-	 // var coloringBoard = {};
-	 // coloringBoard.letterGridValues ='blank';
-  // 	console.log(coloringBoard);	
-
- // color();
+var oneColor = crayonBox[Math.floor(Math.random() * crayonBox.length)];
+console.log(oneColor);
 
 
-
+// function color(){
+// 	var colorGrid = {};
+// 	combos.forEach(function(a1){
+// 	colorGrid.push(a1);
+// });
+// };
+// color();
 
 
 // Refactored Code

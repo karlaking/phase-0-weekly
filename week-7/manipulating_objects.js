@@ -15,25 +15,18 @@ var terah = {
 }
 // __________________________________________
 // Write your code below.
-var adam = { 
-  name: "Adam"
-
-};
-
+var adam = { };
+adam.name = "Adam";
 terah.spouse = adam;
 terah.weight = 125;
-delete terah.eyeColor;
-adam.spouse = terah;
+delete terah.eyeColor
+adam.spouse = terah 
 terah.children = {};
-carson = {
-  name: "Carson"
-}
-terah.children.carson = carson;
-carter = {
-  name: "Carter"}
+carson = {name: "Carson"};
+terah.children.carson = carson; 
+carter = {name: "Carter"};
 terah.children.carter = carter;
-colton = {
-  name: "Colton"}
+colton = {name:"Colton"};
 terah.children.colton = colton;
 adam.children = terah.children;
 
