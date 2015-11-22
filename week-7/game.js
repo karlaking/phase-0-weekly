@@ -16,47 +16,58 @@
 // 	Define a function color to update the coloring board hash to include values to include a randomly selected color from the crayon box array.
 
 // Initial Code
+// var array1 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
 
-var array1 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
-console.log(array1);
+// var array2 = []
+// for (var i = 1; i <= 14; i++) {
+//    array2.push(i);
+// };
 
-var array2 = []
-for (var i = 1; i <= 14; i++) {
-   array2.push(i);
-};
-console.log(array2);
+// var combos = [];
+// array1.forEach(function(a1){
+//   array2.forEach(function(a2){
+//     combos.push(a1 + a2);
+//   });
+// });
 
+// var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink', 'Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink'];
 
-var combos = [];
-array1.forEach(function(a1){
-  array2.forEach(function(a2){
-    combos.push(a1 + a2);
-  });
-});
-
-console.log(combos);
-
-var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink', 'Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink'];
-
-var oneColor = crayonBox[Math.floor(Math.random() * crayonBox.length)];
-console.log(oneColor);
 
 
 // function color(){
 // 	var colorGrid = {};
-// 	combos.forEach(function(a1){
-// 	colorGrid.push(a1);
-// });
+// 	for(var i = 0; i <combos.length;i++){
+// 		colorGrid[combos[i]] = crayonBox[Math.floor(Math.random() * crayonBox.length)];
+// 	};
+// 	console.log(colorGrid)
 // };
+
 // color();
 
-
 // Refactored Code
+var crayonBox = ['Yellow Green','Fluorescent Orange','Asparagus', 'Green','Fluorescent Pink', 'Wisteria', 'Sky Blue', 'Fluorescent Yellow','Gray','Blue','Golden Yellow','Carnation Pink'];
+var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n']
+var numbers = []
+for (var i = 1; i <= 14; i++) {
+   numbers.push(i);
+};
 
+var grid = [];
+letters.forEach(function(a1){
+  numbers.forEach(function(a2){
+    grid.push(a1 + a2);
+  });
+});
 
+function color(){
+	var colorGrid = {};
+	for(var i = 0; i < grid.length;i++){
+		colorGrid[grid[i]] = crayonBox[Math.floor(Math.random() * crayonBox.length)];
+	};
+	console.log(colorGrid)
+};
 
-
-
+color();
 
 // Reflection
 //

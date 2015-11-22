@@ -1,58 +1,58 @@
-// //Pseudocode 
-// // Input: Array of athletes and events
-// // Output: Modified array with a win property 
+//Pseudocode 
+// Input: Array of athletes and events
+// Output: Modified array with a win property 
 
-//   // Add a win property to each athlete 
-//   // Make the win property print a string using the athlete's other properties. 
+  // Add a win property to each athlete 
+  // Make the win property print a string using the athlete's other properties. 
   
-// function addWin(array) {
-//   //for array; ;  
-//   for (var i = 0; i < array.length; i++) {
-//     array[i].win = function(){
-//       console.log(this.name + " wins the " + this.event + "!");
-//     };
-//   }
-// }
+function addWin(array) {
+  //for array; ;  
+  for (var i = 0; i < array.length; i++) {
+    array[i].win = function(){
+      console.log(this.name + " wins the " + this.event + "!");
+    };
+  }
+}
 
-// var athletes = [ 
-//                 {name: "Sarah", event: "High Jump"}, 
-//                 {name: "John", event: "Discus"}
-//                ];
+var athletes = [ 
+                {name: "Sarah", event: "High Jump"}, 
+                {name: "John", event: "Discus"}
+               ];
 
-// addWin(athletes);
-// console.log(athletes);
-// athletes[1].win();
+addWin(athletes);
+console.log(athletes);
+athletes[1].win();
 
-// // function practice(array){
-// // 	for (var i = 0; i < array.length ; i++) {
+function practice(array){
+	for (var i = 0; i < array.length ; i++) {
 
-// // 	} 
-// // }
-// //Release 2 
+	} 
+}
+//Release 2 
 
-// function reverseString(string){
-//   return string.split('').reverse().join('');
-// }
+function reverseString(string){
+  return string.split('').reverse().join('');
+}
 
-// console.log(reverseString('Karla'));
+console.log(reverseString('Karla'));
 
-// // INITIAL
-// // function findEvens(array){
-// //   var evens = []; 
-// //   for (var i = 0; i < array.length; i++) {
-// //     if (array[i] % 2 === 0) {evens.push(array[i])}; 
-// //   };
-// //   return evens;
-// // }
-
-// // REFACTORED
+// INITIAL
 // function findEvens(array){
-//   var x = array.filter(function(value){return value % 2 === 0; });
-//   return x;
+//   var evens = []; 
+//   for (var i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) {evens.push(array[i])}; 
+//   };
+//   return evens;
 // }
-// // DRIVER CODE
-// var numbers = [1,2,3,4,5,6,7,8,48];
-// console.log(findEvens(numbers));
+
+// REFACTORED
+function findEvens(array){
+  var x = array.filter(function(value){return value % 2 === 0; });
+  return x;
+}
+// DRIVER CODE
+var numbers = [1,2,3,4,5,6,7,8,48];
+console.log(findEvens(numbers));
 
 // Release 4
 class Athlete {
