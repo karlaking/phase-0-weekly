@@ -1,91 +1,111 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge with Kevin C.
+This challenge took me 3 hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
 Do not alter the students and scores code.
 */
 
+// var students = ["Joseph", "Susan", "William", "Elizabeth"]
+
+// var scores = [ [80, 70, 70, 100],
+//                [85, 80, 90, 90],
+//                [75, 70, 80, 75],
+//                [100, 90, 95, 85] ]
+
+// // __________________________________________
+// // Write your code below.
+
+// var gradebook= {};
+
+// for (var i = 0; i < students.length; i++){
+//   // var student = students[i];
+//   gradebook[students[i]] = {};
+// };
+
+// for (var i = 0; i < scores.length; i++){
+//     gradebook[students[i]]["testScores"] = scores[i];
+//   };
+
+// gradebook.addScore = function(name, score){
+//     if (gradebook.hasOwnProperty(name)){  
+//         gradebook[name].testScores.push(score);
+//       }
+//     else {
+//       console.log("Enter a valid student name");
+//     }
+//    };
+
+// gradebook.getAverage = function(name){
+//     if (gradebook.hasOwnProperty(name)){
+//      var grades = gradebook[name].testScores;
+//       return average(grades);
+//     }
+// };
+
+// var average = function(array){
+//    var sum = 0
+//    for (var i = 0;i < array.length;i++){
+//      sum += array[i]
+//    };
+//   return sum/array.length;
+// };
+
+
+// // DRIVER CODE 
+
+
+
+// console.log(gradebook);
+// gradebook.getAverage("Joseph")
+// console.log(average([90,90,90]));  
+
+// __________________________________________
+// Refactored Solution
 var students = ["Joseph", "Susan", "William", "Elizabeth"]
 
 var scores = [ [80, 70, 70, 100],
                [85, 80, 90, 90],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
-
-
-
-
-
-
 // __________________________________________
 // Write your code below.
-
 var gradebook= {};
-
-
-
-for (var i = 0; i < students.length; i++){
-  // var student = students[i];
-  gradebook[students[i]] = {};
-};
-
-for (var i = 0; i < scores.length; i++){
-    gradebook[students[i]]["testScores"] = scores[i];
-  };
+for (var i = 0; i < scores.length; i++){gradebook[students[i]]["testScores"] = scores[i];};
 
 gradebook.addScore = function(name, score){
-    if (gradebook.hasOwnProperty(name)){  
-        gradebook[name].testScores.push(score);
-      }
-    else {
-      console.log("Enter a valid student name");
-    }
+    if (gradebook.hasOwnProperty(name)){gradebook[name].testScores.push(score);}
+    else {console.log("Enter a valid student name");}
    };
 
 gradebook.getAverage = function(name){
-    if (gradebook.hasOwnProperty(name)){
-     var grades = gradebook[name].testScores;
-     console.log(average(grades));
-    }
+    if (gradebook.hasOwnProperty(name)){var grades = gradebook[name].testScores;
+      return average(grades);}
 };
 
 var average = function(array){
    var sum = 0
-   for (var i = 0;i < array.length;i++){
-     sum += array[i]
-   };
+   for (var i = 0;i < array.length;i++){sum += array[i]};
+  return sum/array.length;
 };
-
-
-// DRIVER CODE 
-
-
-gradebook.addScore("Joseph", 65);
-console.log(gradebook);
-gradebook.getAverage("Joseph")
-  
-
-
-
-
-
-// __________________________________________
-// Refactored Solution
-
-
-
-
 
 
 
 
 // __________________________________________
 // Reflect
+// What did you learn about adding functions to objects?
+// My pair and I used dot notation on an object to name new functions (average and getAverage).
+// This was good practice at making object specific methods to pass values between. 
 
+// How did you iterate over nested arrays in JavaScript?
+// We used a for loop - something that is inevitable in JS it seems: for (var i = 0;i <array.length;i++){do code array[i]};
 
+//  Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+//  We used the hasOwnProperty to test if value name already exists in the gradebook.
+//  We also used it to find the right set of scores to average in getAverage. 
 
 
 
