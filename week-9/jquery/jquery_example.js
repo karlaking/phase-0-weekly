@@ -1,17 +1,10 @@
 // U3.W9:JQuery
 
 
-// I worked on this challenge [by myself, with: ].
-// This challenge took me [#] hours.
+// I worked on this challenge with William G..
+// This challenge took me 1.5 hours.
 
 $(document).ready(function(){
-
-//RELEASE 0:
-  //link the image
-
-//RELEASE 1:
-
-  //Link this script and the jQuery library to the jQuery_example.html file and analyze what this code does.
 
 //RELEASE 3:
   //Add code here to select elements of the DOM
@@ -39,7 +32,17 @@ helloElement =$('.hello').css({'color':'blue', 'border': '10px solid black', 'vi
 	}) 	
 	})
 
-
+Reflection
+What is jQuery?
+	JQuery is a JS library meant to assist developers in web display. It allows for advanced
+	display and manipulation of features in html. 
+What does jQuery do for you?
+	JQuery allows developers to interact with html elements in a more roboust way, with 
+	powerful means to handle unique user events, domain manipulation, and server connections.
+What did you learn about the DOM while working on this challenge?
+	I feel as though I did not learn very much specifically about the DOM during this challenge.
+	Each release was more geared toward the specific JQuery code we were writting. The main 
+	DOM take away from this challenge is that JQuery is a useful way to interact and manipulate the DOM. 
 
 
 
