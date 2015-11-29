@@ -12,7 +12,7 @@ Margin refers to the space outside of the element, padding is  negative space wi
 What was your impression of this challenge overall? (love, hate, and why?)
 I thought this challenge was very worth-while. CSS can be your best friend if you have a grasp of how it works, and your worst enemey if you do not embrace all its quirks. 
 ##Picture by Release 
-![Release 0](imgs/release0.PNG)
+![Release 0](https://github.com/karlaking/phase-0-weekly/blob/master/week-3/chrome-devtools/imgs/release1.png)
 ![Release 1](imgs/release1.PNG)
 ![Release 2](imgs/release2.PNG)
 ![Release 3](imgs/release3.PNG)
