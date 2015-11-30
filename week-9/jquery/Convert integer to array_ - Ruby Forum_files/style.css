@@ -1,0 +1,29 @@
+h1#pageName small {
+  line-height: 17px;
+  padding-left: 17px;
+  background-repeat: no-repeat;
+  background-image: url(/skins/ruby-forum.com/images/ruby.png);
+}
+ 
+/*.forum .post {*/
+.box {
+  background-repeat: repeat-x;
+/*  background-image: url(/skins/ruby-forum.com/images/post-background.png);*/
+}
+ 
+.forum .post .text {
+  font-size: 12px;
+}
+ 
+.footer {
+  font-size: 0.7em;
+}
+
+.adfooter {
+  margin-top: 5ex;
+  text-align: center;
+}
+
+.stats .box {
+  text-align: center;
+}
