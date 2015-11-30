@@ -1,0 +1,28 @@
+body {
+  font-family: serif;
+}
+
+a {
+  text-decoration: underline;
+}
+
+* {
+background-color: white ! important;
+color: black;
+}
+
+#sidebar {
+  display: none;
+}
+
+#container {
+  width: 100%
+}
+
+.navbar {
+  display: none;
+}
+
+.foot {
+  display: none;
+}
